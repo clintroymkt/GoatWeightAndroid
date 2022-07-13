@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorWhite"
+
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:background="@color/colorWhite"
+            >
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/weightlog"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:fontFamily="@font/nunito"
+                android:text="Welcome! \nSelect  your goat's sex below"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnmale"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="77dp"
+                android:elevation="6dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_male"
+                android:text="🐐 Enduna/ Sipule / Hono / Male "
+                android:fontFamily="@font/nunito"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:fontFamily="@font/nunito"
+                android:elevation="6dp"
+                android:id="@+id/btnfemale"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/round_edge_btn_orange"
+                android:text="🐐 Ensikazi / Impwizi / Hadzi / Female "
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                app:backgroundTint="@null"/>
+
+
+            <Button
+                android:fontFamily="@font/nunito"
+                android:elevation="6dp"
+                android:id="@+id/btnAbt"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/round_edge_button_grey"
+                android:text="❕ About The App "
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                app:backgroundTint="@null"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

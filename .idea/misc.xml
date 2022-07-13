@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/drawable/bg_male.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/drawable/round_edge_btn_orange.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/drawable/round_edge_button_grey.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/layout/activity_about.xml" value="0.2952029520295203" />
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/layout/activity_female.xml" value="0.13043478260869565" />
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/Clint/AndroidStudioProjects/GoatMeasure/app/src/main/res/layout/activity_male.xml" value="0.13043478260869565" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

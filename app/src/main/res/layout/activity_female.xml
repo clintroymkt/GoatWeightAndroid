@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FemaleActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_heart_monitor" />
+
+    <TextView
+        android:id="@+id/txtfemalelogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginBottom="20dp"
+
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:text="🐐 Ensikazi / Impwizi / Hadzi / Female "
+        android:textColor="@color/logoColorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtweightscoref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtfemalelogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="50dp"
+
+
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="@color/logoColorWhite"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/txtBmiUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtweightscoref"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:text="Weight (kg)"
+        android:textColor="@color/logoColorWhite"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/txtcarcweightscoref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBmiUnit"
+
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="50dp"
+
+
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="@color/logoColorWhite"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/txtCarcUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcarcweightscoref"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:text="Carcas Weight (kg)"
+        android:textColor="@color/logoColorWhite"
+        android:textSize="24sp" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtCarcUnit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-5dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge_card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_edge_card"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/inputFields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chest Girth"
+                        android:textStyle="bold"
+                        android:textColor="@color/logoColorDarkCyan"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <EditText
+                        android:id="@+id/txtchestgirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Chest Girth(cm)"
+                        android:paddingTop="20sp"
+                        android:paddingEnd="20sp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="18sp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/logoColorBlack"
+                        android:background="@color/logoColorWhite"
+                        android:layout_below="@+id/txtEmail"/>
+
+                    <View
+                        android:id="@+id/seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/logoColorDarkCyan"
+                        android:backgroundTint="@color/logoColorDarkCyan"
+                        android:layout_below="@+id/txtchestgirth"/>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/calculatefemaleBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/inputFields"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_heart_monitor"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="Calculate"
+                        android:textColor="@color/logoColorWhite"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
